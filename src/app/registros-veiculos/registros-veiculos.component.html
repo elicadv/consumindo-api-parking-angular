@@ -1,0 +1,31 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Parking Spot Number</th>
+        <th>License Plate Car</th>
+        <th>Brand Car</th>
+        <th>Model Car</th>
+        <th>Color Car</th>
+        <th>Registration Date</th>
+        <th>Responsible Name</th>
+        <th>Apartment</th>
+        <th>Block</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let registro of registros$ | async">
+        <td>{{ registro.id }}</td>
+        <td>{{ registro.parkingSpotNumber }}</td>
+        <td>{{ registro.licensePlateCar }}</td>
+        <td>{{ registro.brandCar }}</td>
+        <td>{{ registro.modelCar }}</td>
+        <td>{{ registro.colorCar }}</td>
+        <td>{{ registro.registrationDate }}</td>
+        <td>{{ registro.responsibleName }}</td>
+        <td>{{ registro.apartment }}</td>
+        <td>{{ registro.block }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
